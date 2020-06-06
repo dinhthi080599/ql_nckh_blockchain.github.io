@@ -2,12 +2,18 @@
 	if( 'ontouchstart' in window ){ var click = 'touchstart'; }
 	else { var click = 'click'; }
 
+	$(document).ready(function(){
+		setHeightSameAsWidth($('.hsaw'));
+		$( window ).resize(function() {
+			setHeightSameAsWidth($('.hsaw'));
+		});
+	});
 
 	$('div.burger').on(click, function(){
 
 			if( !$(this).hasClass('open') ){ openMenu(); } 
 			else { closeMenu(); }
-
+		
 	});
 	
 
@@ -56,4 +62,9 @@
 			$('div.x, div.y, div.z').removeClass('collapse');
 		}, 70);													
 		
+	}
+
+	function setHeightSameAsWidth(element) {
+		var cw = $(element).width();
+		$(element).css({'height':cw+'px'});
 	}
