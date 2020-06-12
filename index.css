@@ -1,0 +1,79 @@
+
+.bg-light-warning {
+    background: #fff4de !important;
+}
+.bg-light-primary {
+    background: #e1f0ff !important;
+}
+.bg-light-danger {
+    background: #ffe2e5 !important;
+}
+.bg-light-success {
+    background: #c9f7f5 !important;
+}
+.text-light-warning {
+    color: #fff4de !important;
+}
+.text-light-primary {
+    color: #e1f0ff !important;
+}
+.text-light-danger {
+    color: #ffe2e5 !important;
+}
+.text-light-success {
+    color: #c9f7f5 !important;
+}
+.text-warning {
+    color: #ffa800 !important;
+}
+.text-primary {
+    color: #3699ff !important;
+}
+.text-danger {
+    color: #f64e60 !important;
+}
+.text-success {
+    color: #1bc5bd!important;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        background-color: #EDEFF7;
+    }
+    img{
+        width: 85%;
+    }
+    .content{
+        position: relative;
+        background-color: #fff;
+    }
+    .content-top {
+        background-color: #F64e60;
+        height: 50%;
+    }
+    .content-data {
+        top: 25%;
+        height: 60%;
+        position: absolute;
+        padding: 5px 25px;
+    }
+    .content-data > .row{
+        margin-top: 10px;
+        height: 50%;
+    }
+    .rou {
+        height: 100%;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .dropdown {
+        background-color: rgba(255,255,255,.1);
+        /* background-color: red; */
+        border-color: transparent;
+        padding: 6px;
+    }
+    .btn.btn-transparent-white {
+        /* color: #fff; */
+    }
+}

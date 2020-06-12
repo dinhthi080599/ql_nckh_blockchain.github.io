@@ -25,12 +25,16 @@ div.x, div.y, div.z {
 		height: 100%;
 		font:12px "Open Sans", sans-serif; 
 	}
+	.hsaw{
+		background-color: #fff;
+		border: 1px solid #4791d3;
+	}
 	div.screen{
 		width: 100%;
-		min-height: 700px;	
 		overflow:hidden;
-		position:absolute; 
+		position: relative; 
 		background:#0D1019;
+		overflow: auto;
 	}
 	.list{margin-top:0px; text-align:left;}
 	.item{
@@ -42,7 +46,7 @@ div.x, div.y, div.z {
 	.item .img, .item span{background:#214273; border-radius:3px;}
 	.item .img{float:left; width:71px; height:71px; margin-left:-93px;}
 	.item span{height:11px; width:180px; margin-bottom:19px; float:left;}
-	.item span:nth-of-type(3){width:75px; margin-botom:0;}
+	.item span:nth-of-type(3){width:75px;}
 
 	div.burger {
 		height: 40px; 
@@ -121,7 +125,7 @@ div.x, div.y, div.z {
 					transition: all 100ms ease-out;					
 		}
 
-	div.navbar{height:73px;background:#0D1019;}
+	div.navbar{height:73px;background:#232733;}
 
 	div.circle{	
 		border-radius: 50%;
@@ -214,5 +218,18 @@ div.x, div.y, div.z {
 		top:470px;
 		transition-delay: 0.15s;	
 				
+	}
+
+	div.bottom-menu {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	div.bottom-menu .col{
+		padding: 12px;
+		border-top: 1px solid #fff;
+	}
+	div.bottom-menu .col:not(:last-of-type){
+		border-right: 1px solid #fff;
 	}
 }

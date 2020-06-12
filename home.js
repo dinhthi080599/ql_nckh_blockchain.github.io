@@ -3,9 +3,14 @@
 	else { var click = 'click'; }
 
 	$(document).ready(function(){
-		setHeightSameAsWidth($('.hsaw'));
+		// var hsaw = $('.hsaw');
+		// $.each(hsaw, function(index, value) {
+		// 	setHeightSameAsWidth(value);
+		// }); 
+		setFullHeight($('.screen'));
 		$( window ).resize(function() {
 			setHeightSameAsWidth($('.hsaw'));
+			setFullHeight($('.screen'));
 		});
 	});
 
@@ -67,4 +72,9 @@
 	function setHeightSameAsWidth(element) {
 		var cw = $(element).width();
 		$(element).css({'height':cw+'px'});
+	}
+
+	function setFullHeight(element) {
+		var height = screen.height;
+		$(element).css({'height':height+'px'});
 	}
