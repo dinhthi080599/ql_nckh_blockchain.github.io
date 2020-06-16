@@ -279,6 +279,7 @@ div.x, div.y, div.z {
 		border-right: 1px solid #fff;
 	}
 	.fullheight-xs{
+		display: none;
 		height: 50px !important; 
 		position: relative; 
 		overflow:hidden;

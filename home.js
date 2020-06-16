@@ -29,10 +29,10 @@
 
 
 	function openMenu(){
-		
-		$('body').addClass('fullheight-xs');
+		$('.content').addClass('fullheight-xs');
 		$('div.circle').addClass('expand');
-					
+		$('div.content').addClass('expand');
+		
 		$('div.burger').addClass('open');	
 		$('div.burger').addClass('bg-white');	
 		$('div.burger').removeClass('bg-light-blue');	
@@ -54,7 +54,7 @@
 	}
 	
 	function closeMenu(){
-		$('body').removeClass('fullheight-xs');
+		$('.content').removeClass('fullheight-xs');
 		$('div.burger').removeClass('open');	
 		$('div.burger').removeClass('bg-white');	
 		$('div.burger').addClass('bg-light-blue');		
