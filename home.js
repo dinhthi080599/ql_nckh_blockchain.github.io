@@ -30,9 +30,12 @@
 
 	function openMenu(){
 		
+		$('body').addClass('fullheight-xs');
 		$('div.circle').addClass('expand');
 					
 		$('div.burger').addClass('open');	
+		$('div.burger').addClass('bg-white');	
+		$('div.burger').removeClass('bg-light-blue');	
 		$('div.x, div.y, div.z').addClass('collapse');
 		$('.menu li').addClass('animate');
 		
@@ -51,8 +54,10 @@
 	}
 	
 	function closeMenu(){
-
+		$('body').removeClass('fullheight-xs');
 		$('div.burger').removeClass('open');	
+		$('div.burger').removeClass('bg-white');	
+		$('div.burger').addClass('bg-light-blue');		
 		$('div.x').removeClass('rotate45').addClass('rotate30'); 
 		$('div.z').removeClass('rotate135').addClass('rotate150');				
 		$('div.circle').removeClass('expand');

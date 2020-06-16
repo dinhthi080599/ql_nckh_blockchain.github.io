@@ -2,10 +2,22 @@
 
 	$(document).ready(function(){
 		setFullHeight($('body'));
-        setHeight40($('.content'));
+		setFullHeight($('#fullheight'));
+        setHeight40($('.height40'));
 		$( window ).resize(function() {
             setFullHeight($('body'));
-            setHeight40($('.content'));
+			setFullHeight($('#fullheight'));
+            setHeight40($('.height40'));
+		});
+		$('[data-toggle="slide-collapse"]').on('click', function() {
+			$navMenuCont = $($(this).data('target'));
+			$navMenuCont.animate({'width':'toggle'}, 280);
+		});
+		
+
+		$('div.burger').on(click, function(){
+			if( !$(this).hasClass('open') ){ openMenu(); } 
+			else { closeMenu(); }
 		});
 	});
 
