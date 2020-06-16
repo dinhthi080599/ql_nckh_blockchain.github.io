@@ -2,11 +2,11 @@
 
 	$(document).ready(function(){
 		setFullHeight($('body'));
-		// setFullHeight($('fullheight'));
+		setFullHeight($('#fullheight'));
         setHeight40($('.height40'));
 		$( window ).resize(function() {
             setFullHeight($('body'));
-			// setFullHeight($('#fullheight'));
+			setFullHeight($('#fullheight'));
             setHeight40($('.height40'));
 		});
 		$('[data-toggle="slide-collapse"]').on('click', function() {
