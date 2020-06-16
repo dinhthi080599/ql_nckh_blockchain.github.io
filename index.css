@@ -8,7 +8,7 @@ img {
 #fullheight{
 	width: 100%;
 	overflow: hidden;
-    position: relative;
+	position: relative;
 }
 .nav-burger{
 	height: 30px;
@@ -279,7 +279,7 @@ div.x, div.y, div.z {
 		border-right: 1px solid #fff;
 	}
 	.fullheight-xs{
-		height: 667px; 
+		height: 50px; 
 		position: relative; 
 		overflow:hidden;
 	}
