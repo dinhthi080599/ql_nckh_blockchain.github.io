@@ -47,7 +47,6 @@ div.x, div.y, div.z {
 	.item .img{float:left; width:71px; height:71px; margin-left:-93px;}
 	.item span{height:11px; width:180px; margin-bottom:19px; float:left;}
 	.item span:nth-of-type(3){width:75px;}
-
 	div.burger {
 		height: 40px; 
 		width: 40px;

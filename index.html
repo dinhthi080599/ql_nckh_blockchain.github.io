@@ -12,172 +12,191 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
     <script src="index.js"></script>
     <script src="home.js"></script>
-    <title>Document</title>
+    <title>Hệ thống quản lý NCKH</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row header"> <!-- Nơi đây sẽ chứa một cái menu thật là đẹp -->
-            <div class="parent-circle" id="fullheight">
-                <div class="circle"></div>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Share</a></li>
-                    <li><a href="">Activity</a></li>
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>			     
-            <div class="burger bg-light-blue">
-                <div class="x"></div>
-                <div class="y"></div>
-                <div class="z"></div>
-            </div>    
-        </div>
-    </div>
-    <div class="p-3">
+    <div class="body">
         <div class="container">
-            <div class="row content height40">
-                <div class="col-sm content-top rounded">
-                    <div class="row pt-2">
-                        <div class="col-8">
-                            <p class="text-light font-weight-bold pt-1">Hệ thống quản lý NCKH</p>
-                        </div>
-                        <div class="col-4 pl-0">
-                            <div class="dropdown rounded">
-                                <p class="m-0 text-center text-light small">Danh mục <i class="fas fa-chevron-down pl-1 dpt-1"></i></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row header"> <!-- Nơi đây sẽ chứa một cái menu thật là đẹp -->
+                <div class="parent-circle d-lg-none d-md-none" id="fullheight">
+                    <div class="circle"></div>
                 </div>
-                <div class="col-sm content-data rounded">
-                    <div class="row">
-                        <div class="col rou bg-light-warning">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="./icons/chart.png" alt="">
-                                </div>
-                                <div class="col">
+                <div class="parent-burger bg-light-blue col-12">
+                    <div class="menu">
+                        <ul>    
+                            <li><a href="./">Hệ thống QL NCKH</a></li>
+                            <li><a href="./">Hoạt động</a></li>
+                            <li><a href="./">Cán bộ</a></li>
+                            <li><a href="./">Minh chứng</a></li>
+                            <li><a href="./">Cá nhân</a></li>
+                        </ul>
+                    </div>			
+                    <div class="burger d-lg-none d-md-none">
+                        <div class="x"></div>
+                        <div class="y"></div>
+                        <div class="z"></div>
+                    </div>    
+                </div>     
+            </div>
+        </div>
+        <div class="container-fluid d-none d-md-block d-xl-block p-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Danh sách sinh viên</li>
+                    <li class="" style="right: 7%;position: absolute;" aria-current="page">Xin chào, Thi</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 content-md-left">
+                        <div class="row content height40">
+                            <div class="col-sm content-top rounded d-lg-none d-md-none">
+                                <div class="row pt-2">
+                                    <div class="col-8">
+                                        <p class="text-light font-weight-bold pt-1">Hệ thống quản lý NCKH</p>
+                                    </div>
+                                    <div class="col-4 pl-0">
+                                        <div class="dropdown rounded">
+                                            <p class="m-0 text-center text-light small">Danh mục <i class="fas fa-chevron-down pl-1 dpt-1"></i></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-warning mt-1">Hoạt động NCKH</p>
+                            <div class="col-sm content-data rounded">
+                                <div class="row height-md-50">
+                                    <div class="col rou bg-light-warning">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="./icons/chart.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-warning mt-1">Hoạt động NCKH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col rou bg-light-primary">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="./icons/user_group.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-primary mt-1">Danh sách cán bộ</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col rou bg-light-primary">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="./icons/user_group.png" alt="">
-                                </div>
-                                <div class="col">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-primary mt-1">Danh sách cán bộ</p>
+                                <div class="row height-md-50">
+                                    <div class="col rou bg-light-danger">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="./icons/folder.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-danger mt-1">Minh chứng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col rou bg-light-success">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="./icons/profile.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="text-success mt-1">Cá nhân</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col rou bg-light-danger">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="./icons/folder.png" alt="">
-                                </div>
-                                <div class="col">
+                    <div class="col-md-6 content-md-right">
+                        <div class="row content rounded bg-white height-md-100">
+                            <div class="col-10 pt-2">
+                                <h4 class="mb-1">Hoạt động gần đây</h4>
+                                <p class="text-secondary">100 hoạt động</p>
+                            </div>
+                            <div class="col-2 pt-4 pl-4">
+                                <i class="fas fa-ellipsis-v fa-lg"></i>
+                            </div>
+                            <div class="col-12 time-line">
+                                <div class="row pt-2 pb-2">
+                                    <div class="col-3">
+                                        25-03
+                                    </div>
+                                    <div class="col-2 event-status">
+                                        <i class="far fa-circle text-success "></i>
+                                    </div> 
+                                    <div class="col-7">
+                                        Trao thưởng cấp khoa
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-danger mt-1">Minh chứng</p>
+                            <div class="col-12 time-line">
+                                <div class="row pt-2 pb-2">
+                                    <div class="col-3">
+                                        25-03
+                                    </div>
+                                    <div class="col-2 event-status">
+                                        <i class="far fa-circle text-warning"></i>
+                                    </div> 
+                                    <div class="col-7">
+                                        Trao thưởng cấp khoa
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col rou bg-light-success">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="./icons/profile.png" alt="">
-                                </div>
-                                <div class="col">
+                            <div class="col-12 time-line">
+                                <div class="row pt-2 pb-2">
+                                    <div class="col-3">
+                                        25-03
+                                    </div>
+                                    <div class="col-2 event-status">
+                                        <i class="far fa-circle text-primary"></i>
+                                    </div> 
+                                    <div class="col-7">
+                                        Trao thưởng cấp khoa
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-success mt-1">Cá nhân</p>
+                            <div class="col-12 time-line">
+                                <div class="row pt-2 pb-2">
+                                    <div class="col-3">
+                                        25-03
+                                    </div>
+                                    <div class="col-2 event-status">
+                                        <i class="far fa-circle text-danger"></i>
+                                    </div> 
+                                    <div class="col-7">
+                                        Trao thưởng cấp khoa
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row content mt-3 rounded ">
-                <div class="col-10 pt-2">
-                    <h4 class="mb-1">Hoạt động gần đây</h4>
-                    <p class="text-secondary">100 hoạt động</p>
-                </div>
-                <div class="col-2 pt-4 pl-4">
-                    <i class="fas fa-ellipsis-v fa-lg"></i>
-                </div>
-                <div class="col-12 time-line">
-                    <div class="row pt-2 pb-2">
-                        <div class="col-3">
-                            25-03
-                        </div>
-                        <div class="col-2 event-status">
-                            <i class="far fa-circle text-success "></i>
-                        </div> 
-                        <div class="col-7">
-                            Trao thưởng cấp khoa
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 time-line">
-                    <div class="row pt-2 pb-2">
-                        <div class="col-3">
-                            25-03
-                        </div>
-                        <div class="col-2 event-status">
-                            <i class="far fa-circle text-warning"></i>
-                        </div> 
-                        <div class="col-7">
-                            Trao thưởng cấp khoa
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 time-line">
-                    <div class="row pt-2 pb-2">
-                        <div class="col-3">
-                            25-03
-                        </div>
-                        <div class="col-2 event-status">
-                            <i class="far fa-circle text-primary"></i>
-                        </div> 
-                        <div class="col-7">
-                            Trao thưởng cấp khoa
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 time-line">
-                    <div class="row pt-2 pb-2">
-                        <div class="col-3">
-                            25-03
-                        </div>
-                        <div class="col-2 event-status">
-                            <i class="far fa-circle text-danger"></i>
-                        </div> 
-                        <div class="col-7">
-                            Trao thưởng cấp khoa
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row footer mt-3 p-3 rounded bg-light">
-                <p class="m-0 text-secondary">Xây dựng và phát triển bởi: TS. Nguyễn Đức Tuấn<i style="color: red;">♥</i></p>
-            </div>
+        </div>
+        <div class="row footer m-0 p-2 bg-light-blue text-center w-100">
+            <p class="m-0 w-100 text-light">Xây dựng và phát triển bởi: TS. Nguyễn Đức Tuấn<i style="color: red;"> ♥</i></p>
         </div>
     </div>
 </body>
