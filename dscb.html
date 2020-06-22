@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="home.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hd-nckh.css">
+    <title>Danh sách cán bộ</title>
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="row header"> <!-- Nơi đây sẽ chứa một cái menu thật là đẹp -->
+                <div class="parent-circle d-lg-none d-md-none" id="fullheight">
+                    <div class="circle"></div>
+                </div>
+                <div class="parent-burger bg-light-blue col-12">
+                    <div class="menu">
+                        <ul>    
+                            <li><a href="./">Hệ thống QL NCKH</a></li>
+                            <li><a href="./">Hoạt động</a></li>
+                            <li><a href="./">Cán bộ</a></li>
+                            <li><a href="./">Minh chứng</a></li>
+                            <li><a href="./">Cá nhân</a></li>
+                        </ul>
+                    </div>			
+                    <div class="burger d-lg-none d-md-none">
+                        <div class="x"></div>
+                        <div class="y"></div>
+                        <div class="z"></div>
+                    </div>    
+                </div>     
+            </div>
+        </div>
+        <div class="container-fluid d-none d-md-block d-xl-block p-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Hoạt động NCKH</li>
+                    <li class="" style="right: 7%;position: absolute;" aria-current="page">Xin chào, Thi</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 bg-white p-3 rounded content-md-left">
+                        <div class="row border-0 bg-white">
+                            <div class="col-md-6 mb-2">
+                                <span class="card-label text-dark title">Danh sách sự kiện</span>
+                                <span class="text-muted font-weight-bold d-block">20+ Sự kiện</span>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <a href="#" class="btn btn-info btn-sm font-weight-bolder font-size-sm mr-3 float-right ml-1" title="Tất cả sự kiện" data-toggle="tooltip" data-placement="top">
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm font-weight-bolder font-size-sm float-right ml-1" title="Thêm sự kiện" data-toggle="tooltip" data-placement="top">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row pl-3 pr-3">
+                            <table class="table table-head-custom table-head-bg">
+                                <thead>
+                                    <tr class="text-left">
+                                        <th style="width: 13%" class="text-center rounded">STT</th>
+                                        <th style="width: 50%" class="pl-0"><span class="text-dark">Tên sự kiện</span></th>
+                                        <th style="width: 20%" class="pl-0">Số đề tài</th>
+                                        <th style="width: 17%" class="text-right">Tác vụ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-0 pt-3 text-center">1</td>
+                                        <td class="p-0 pt-3">
+                                            <span class="text-dark-75 d-block">
+                                                Nghiên cứu khoa học cấp khoa
+                                            </span>
+                                            <span class="text-muted font-weight-bold d-block">20-12-2019</span>
+                                        </td>
+                                        <td class="p-0 pt-3">
+                                            <span class="text-dark-75 d-block ">
+                                                3
+                                            </span>
+                                            <span class="text-muted font-weight-bold d-block">Đề tài</span>
+                                        </td>
+                                        <td class="p-0 pt-3 text-right">
+                                            <a href="#" class="btn btn-light-danger btn-sm font-size-sm pt-1 pb-1" title="Cập nhật" data-toggle="tooltip" data-placement="top">
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-light-success btn-sm font-size-sm pt-1 pb-1" title="Chi tiết" data-toggle="tooltip" data-placement="top">
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-0 pt-3 text-center">2</td>
+                                        <td class="p-0 pt-3">
+                                            <span class="text-dark-75 d-block ">
+                                                Nghiên cứu khoa học cấp trường
+                                            </span>
+                                            <span class="text-muted font-weight-bold d-block">20-12-2019</span>
+                                        </td>
+                                        <td class="p-0 pt-3">
+                                            <span class="text-dark-75 d-block ">
+                                                13
+                                            </span>
+                                            <span class="text-muted font-weight-bold d-block">Đề tài</span>
+                                        </td>
+                                        <td class="p-0 pt-3 text-right">
+                                            <a href="#" class="btn btn-light-danger btn-sm font-size-sm pt-1 pb-1" title="Cập nhật" data-toggle="tooltip" data-placement="top">
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-light-success btn-sm font-size-sm pt-1 pb-1" title="Chi tiết" data-toggle="tooltip" data-placement="top">
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-0 pt-3 text-center">3</td>
+                                        <td class="p-0 pt-3">
+                                            <span class="text-dark-75 d-block">
+                                                Trao phần thưởng
+                                            </span>
+                                            <span class="text-muted font-weight-bold d-block">20-12-2019</span>
+                                        </td>
+                                        <td class="p-0 pt-3">
+                                            <span class="text-dark-75 d-block ">
+                                                9
+                                            </span>
+                                            <span class="text-muted font-weight-bold d-block">Đề tài</span>
+                                        </td>
+                                        <td class="p-0 pt-3 text-right">
+                                            <a href="#" class="btn btn-light-danger btn-sm font-size-sm pt-1 pb-1" title="Cập nhật" data-toggle="tooltip" data-placement="top">
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-light-success btn-sm font-size-sm pt-1 pb-1" title="Chi tiết" data-toggle="tooltip" data-placement="top">
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>             
+                    </div>
+                    <div class="col-md-6 bg-white p-3 rounded content-md-right">
+                        <div class="row border-0 bg-white">
+                            <div class="col-md-6 mb-2">
+                                <span class="card-label text-dark title">Chi tiết sự kiện</span>
+                                <span class="text-muted font-weight-bold d-block">13 Đề tài</span>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <a href="#" class="btn btn-info btn-sm font-weight-bolder font-size-sm mr-3 float-right ml-1" title="Tất cả sự kiện" data-toggle="tooltip" data-placement="top">
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm font-weight-bolder font-size-sm float-right ml-1" title="Thêm sự kiện" data-toggle="tooltip" data-placement="top">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-10 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <div class="symbol symbol-45 symbol-light mr-5">
+                                            <span class="symbol-label d-flex align-items-center justify-content-center rounded">
+                                                <img src="./icons/stars.png" class="h-50 align-self-center" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1">
+                                            <span class="text-muted-detail font-weight-bold d-block">Tên sự kiện: </span>
+                                            <span class="text-dark-75 d-block">Nghiên cứu khoa học cấp khoa</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-10 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <div class="symbol symbol-45 symbol-light mr-5">
+                                            <span class="symbol-label d-flex align-items-center justify-content-center rounded">
+                                                <img src="./icons/clock.png" class="h-50 align-self-center" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-column flex-grow-1">
+                                            <span class="text-muted-detail font-weight-bold d-block">Thời gian: </span>
+                                            <span class="text-dark-75 d-block">20-12-2019</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pl-3 pr-3 pt-2">
+                            <table class="table table-head-custom table-head-bg">
+                                <thead>
+                                    <tr class="text-left">
+                                        <th style="width: 50%" class="pl-3">
+                                            <span class="text-dark">Tên đề tài</span>
+                                        </th>
+                                        <th style="width: 30%" class="pl-0">Người thực hiện</th>
+                                        <th style="width: 20%" class="text-right">Minh chứng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="mt-2">
+                                        <td class="">
+                                            <span class="text-dark-75 d-block font-weight-normal">
+                                                Xây dựng hệ thống bỏ phiếu điện tử
+                                            </span>
+                                        </td>
+                                        <td class="pl-0">
+                                            <span class="text-dark-75 d-block font-weight-normal">Nguyễn Đình Thi</span>
+                                        </td>
+                                        <td class="align-items-center pt-1 text-right">
+                                            <a href="#" class="btn btn-light-success btn-sm font-size-sm" title="Chi tiết" data-toggle="tooltip" data-placement="top">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="mt-2">
+                                        <td class="">
+                                            <span class="text-dark-75 d-block font-weight-normal">
+                                                Xây dựng hệ thống bỏ phiếu điện tử
+                                            </span>
+                                        </td>
+                                        <td class="pl-0">
+                                            <span class="text-dark-75 d-block font-weight-normal">Nguyễn Đình Thi</span>
+                                        </td>
+                                        <td class="align-items-center pt-1 text-right">
+                                            <a href="#" class="btn btn-light-success btn-sm font-size-sm" title="Chi tiết" data-toggle="tooltip" data-placement="top">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="mt-2">
+                                        <td class="">
+                                            <span class="text-dark-75 d-block font-weight-normal">
+                                                Xây dựng hệ thống bỏ phiếu điện tử
+                                            </span>
+                                        </td>
+                                        <td class="pl-0">
+                                            <span class="text-dark-75 d-block font-weight-normal">Nguyễn Đình Thi</span>
+                                        </td>
+                                        <td class="align-items-center pt-1 text-right">
+                                            <a href="#" class="btn btn-light-success btn-sm font-size-sm" title="Chi tiết" data-toggle="tooltip" data-placement="top">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="mt-2">
+                                        <td class="">
+                                            <span class="text-dark-75 d-block font-weight-normal">
+                                                Xây dựng hệ thống bỏ phiếu điện tử
+                                            </span>
+                                        </td>
+                                        <td class="pl-0">
+                                            <span class="text-dark-75 d-block font-weight-normal">Nguyễn Đình Thi</span>
+                                        </td>
+                                        <td class="align-items-center pt-1 text-right">
+                                            <a href="#" class="btn btn-light-success btn-sm font-size-sm" title="Chi tiết" data-toggle="tooltip" data-placement="top">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer m-0 p-2 bg-light-blue text-center w-100">
+            <p class="m-0 w-100 text-light">Xây dựng và phát triển bởi: TS. Nguyễn Đức Tuấn<i style="color: red;"> ♥</i></p>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+</html>

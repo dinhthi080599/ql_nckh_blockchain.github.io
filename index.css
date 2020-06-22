@@ -1,4 +1,6 @@
-
+.bg-blue{
+	background:#3c8dbc !important;
+}
 .bg-light-blue{
 	background: #2c5a88 !important;
 }
@@ -45,6 +47,7 @@
 body {
 	background-color: #EDEFF7;
 	height: auto;
+	font-family: 'Tahoma', sans-serif;
 }
 img {
     width: 100%;
@@ -58,6 +61,43 @@ img {
 	margin-bottom: 10px;
 }
 * { margin: 0px; padding: 0px; }
+a{
+	text-decoration: none !important;
+}
+a:hover img{
+	animation: shake 3s;
+  	animation-iteration-count: infinite;
+}
+a:hover .text-danger {
+	color: #ec0c24 !important;
+	font-weight: bold;
+}
+a:hover .text-warning {
+	color: #b37600!important;
+	font-weight: bold;
+}
+a:hover .text-primary {
+	color: #0073e9!important;
+	font-weight: bold;
+}
+a:hover .text-success {
+	color: #12827c!important;
+	font-weight: bold;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 div.burger{
 	width: 100%;
 	height: 40px;
@@ -88,6 +128,9 @@ div.x, div.y, div.z {
 	top: 0px; bottom: 20px; left: 6px;		
 	background: #fff;
 	border-radius:2px;
+}
+div.x,div.z{ 
+	display: block !important;
 }
 div.parent-burger{
 	width: 100%;
@@ -127,6 +170,9 @@ div.menu, .menu ul li{
 	}
 	.content-md-right{
 		margin-left: 15px;
+	}
+	.rou a {
+		text-align: center;
 	}
 } 
 
@@ -347,7 +393,7 @@ div.menu, .menu ul li{
 		overflow:hidden;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     img{
         width: 85%;
     }

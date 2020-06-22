@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <script src="home.js"></script>
     <title>Hệ thống quản lý NCKH</title>
@@ -21,7 +20,7 @@
                 <div class="parent-circle d-lg-none d-md-none" id="fullheight">
                     <div class="circle"></div>
                 </div>
-                <div class="parent-burger bg-light-blue col-12">
+                <div class="parent-burger bg-blue col-12">
                     <div class="menu">
                         <ul>    
                             <li><a href="./">Hệ thống QL NCKH</a></li>
@@ -52,7 +51,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 content-md-left">
-                        <div class="row content height40">
+                        <div class="row content height40 height-md-100">
                             <div class="col-sm content-top rounded d-lg-none d-md-none">
                                 <div class="row pt-2">
                                     <div class="col-8">
@@ -66,64 +65,72 @@
                                 </div>
                             </div>
                             <div class="col-sm content-data rounded">
-                                <div class="row height-md-50">
-                                    <div class="col rou bg-light-warning">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img src="./icons/chart.png" alt="">
+                                <div class="row height-md-50 h-50 d-flex align-items-end">
+                                    <div class="col rou bg-light-warning h-100">
+                                        <a href="./hd-nckh.html">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col col-md-7 ">
+                                                    <img src="./icons/chart.png" alt="">
+                                                </div>
+                                                <div class="col d-lg-none d-md-none">
+                                                </div>
                                             </div>
-                                            <div class="col">
+                                            <div class="row align-self-end">
+                                                <div class="col">
+                                                    <p class="text-warning mt-2">Hoạt động NCKH</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="text-warning mt-1">Hoạt động NCKH</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="col rou bg-light-primary">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img src="./icons/user_group.png" alt="">
+                                    <div class="col rou bg-light-primary h-100">
+                                        <a href="./dscb.html">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col col-md-7">
+                                                    <img src="./icons/user_group.png" alt="">
+                                                </div>
+                                                <div class="col d-lg-none d-md-none">
+                                                </div>
                                             </div>
-                                            <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-primary mt-2">Danh sách cán bộ</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="text-primary mt-1">Danh sách cán bộ</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="row height-md-50">
-                                    <div class="col rou bg-light-danger">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img src="./icons/folder.png" alt="">
+                                <div class="row height-md-50 h-50 d-flex align-items-end">
+                                    <div class="col rou bg-light-danger h-100">
+                                        <a href="./ds-minhchung.html">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col col-md-7 ">
+                                                    <img src="./icons/folder.png" alt="">
+                                                </div>
+                                                <div class="col d-lg-none d-md-none">
+                                                </div>
                                             </div>
-                                            <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-danger mt-2">Minh chứng</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="text-danger mt-1">Minh chứng</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="col rou bg-light-success">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img src="./icons/profile.png" alt="">
+                                    <div class="col rou bg-light-success h-100">
+                                        <a href="./hd-nckh.html">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col col-md-7">
+                                                    <img src="./icons/profile.png" alt="">
+                                                </div>
+                                                <div class="col d-lg-none d-md-none">
+                                                </div>
                                             </div>
-                                            <div class="col">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-success mt-2">Cá nhân</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="text-success mt-1">Cá nhân</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -131,65 +138,71 @@
                     </div>
                     <div class="col-md-6 content-md-right">
                         <div class="row content rounded bg-white height-md-100">
-                            <div class="col-10 pt-2">
-                                <h4 class="mb-1">Hoạt động gần đây</h4>
-                                <p class="text-secondary">100 hoạt động</p>
-                            </div>
-                            <div class="col-2 pt-4 pl-4">
-                                <i class="fas fa-ellipsis-v fa-lg"></i>
-                            </div>
-                            <div class="col-12 time-line">
-                                <div class="row pt-2 pb-2">
-                                    <div class="col-3">
-                                        25-03
+                            <ul class="list-group w-100">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-10 pt-2">
+                                            <h4 class="mb-1">Hoạt động gần đây</h4>
+                                            <p class="text-secondary">100 hoạt động</p>
+                                        </div>
+                                        <div class="col-2 pt-4 pl-4">
+                                            <i class="fas fa-ellipsis-v fa-lg"></i>
+                                        </div>
                                     </div>
-                                    <div class="col-2 event-status">
-                                        <i class="far fa-circle text-success "></i>
-                                    </div> 
-                                    <div class="col-7">
-                                        Trao thưởng cấp khoa
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row pt-2 pb-2">
+                                        <div class="col-3">
+                                            25-03
+                                        </div>
+                                        <div class="col-2 event-status">
+                                            <i class="far fa-circle text-success "></i>
+                                        </div> 
+                                        <div class="col-7">
+                                            Trao thưởng cấp khoa
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12 time-line">
-                                <div class="row pt-2 pb-2">
-                                    <div class="col-3">
-                                        25-03
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row pt-2 pb-2">
+                                        <div class="col-3">
+                                            25-03
+                                        </div>
+                                        <div class="col-2 event-status">
+                                            <i class="far fa-circle text-warning"></i>
+                                        </div> 
+                                        <div class="col-7">
+                                            Trao thưởng cấp khoa
+                                        </div>
                                     </div>
-                                    <div class="col-2 event-status">
-                                        <i class="far fa-circle text-warning"></i>
-                                    </div> 
-                                    <div class="col-7">
-                                        Trao thưởng cấp khoa
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row pt-2 pb-2">
+                                        <div class="col-3">
+                                            25-03
+                                        </div>
+                                        <div class="col-2 event-status">
+                                            <i class="far fa-circle text-primary"></i>
+                                        </div> 
+                                        <div class="col-7">
+                                            Trao thưởng cấp khoa
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12 time-line">
-                                <div class="row pt-2 pb-2">
-                                    <div class="col-3">
-                                        25-03
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row pt-2 pb-2">
+                                        <div class="col-3">
+                                            25-03
+                                        </div>
+                                        <div class="col-2 event-status">
+                                            <i class="far fa-circle text-danger"></i>
+                                        </div> 
+                                        <div class="col-7">
+                                            Trao thưởng cấp khoa
+                                        </div>
                                     </div>
-                                    <div class="col-2 event-status">
-                                        <i class="far fa-circle text-primary"></i>
-                                    </div> 
-                                    <div class="col-7">
-                                        Trao thưởng cấp khoa
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 time-line">
-                                <div class="row pt-2 pb-2">
-                                    <div class="col-3">
-                                        25-03
-                                    </div>
-                                    <div class="col-2 event-status">
-                                        <i class="far fa-circle text-danger"></i>
-                                    </div> 
-                                    <div class="col-7">
-                                        Trao thưởng cấp khoa
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

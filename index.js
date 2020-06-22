@@ -38,14 +38,14 @@
     
 
 	function setHeight40(element) {
-        var height = parseInt(screen.height)/100*43;
+        var height = parseInt(screen.height)/100*40;
 		$(element).css({'height':height+'px'});
     }
 	function setHeight50(element) {
 		var height = parseInt(screen.height)/2;
 		var width = screen.width;
 		if(width > 992)
-		$(element).css({'height':'50%'});
+		$(element).css({'height':'50% !important'});
     }
 	function setHeight100(element) {
 		var height = parseInt(screen.height)/2;
